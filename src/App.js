@@ -22,35 +22,35 @@ class App extends React.Component {
 
     render() {
         return (
-                <View activePanel={this.state.panel}>
+            <View activePanel={this.state.panel}>
 
-                    <FirstPage
-                        id={"first_panel"}
-                        next={() => {this.setState({panel: "data_panel"})}}/>
+                <FirstPage
+                    id={"first_panel"}
+                    next={() => {this.setState({panel: "data_panel"})}}/>
 
-                    <PodcastDataPage
-                        id={"data_panel"}
-                        back={() => {this.setState({panel: "first_panel"})}}
-                        openEditing={() => {this.setState({panel: "editing_panel"})}}
-                        next={() => {this.setState({panel: "preview_panel"})}}/>
+                <PodcastDataPage
+                    id={"data_panel"}
+                    back={() => {this.setState({panel: "first_panel"})}}
+                    openEditing={() => {this.setState({panel: "editing_panel"})}}
+                    next={() => {this.setState({panel: "preview_panel"})}}/>
 
-                    <AudioEditingPage
-                        id={"editing_panel"}
-                        back={() => {this.setState({panel: "data_panel"})}}/>
+                <AudioEditingPage
+                    id={"editing_panel"}
+                    back={() => {this.setState({panel: "data_panel"})}}/>
 
-                    <MusicPickingPage
-                        id={"music_picking_panel"}
-                        back={() => {this.setState({panel: "editing_panel"})}}/>
+                <MusicPickingPage
+                    id={"music_picking_panel"}
+                    back={() => {this.setState({panel: "editing_panel"})}}/>
 
-                    <PodcastPreviewPage
-                        id={"preview_panel"}
-                        back={() => {this.setState({panel: "data_panel"})}}
-                        next={() => {this.setState({panel: "last_panel"})}}/>
+                <PodcastPreviewPage
+                    id={"preview_panel"}
+                    back={() => {this.setState({panel: "data_panel"})}}
+                    next={() => {this.setState({panel: "last_panel"})}}/>
 
-                    <LastPage
-                        id={"last_panel"}
-                        next={() => {this.setState({panel: "first_panel"})}}/>
-                </View>
+                <LastPage
+                    id={"last_panel"}
+                    next={() => {this.setState({panel: "first_panel"})}}/>
+            </View>
         );
     }
 }

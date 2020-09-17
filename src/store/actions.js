@@ -1,35 +1,37 @@
-function getObj(type, value) {
-    return {type, value}
+import podcastStore from "./PodcastStore";
+
+function send(type, value) {
+    podcastStore.dispatch({type, value})
 }
 
 export function setTitle(title) {
-    return getObj("title", title)
+    send("title", title)
 }
 
 export function setDescription(description) {
-    return getObj("description", description)
+    send("description", description)
 }
 
 export function setImagePreview(imagePreview) {
-    return getObj("imagePreview", imagePreview)
+    send("imagePreview", imagePreview)
 }
 
 export function setAudio(audio) {
-    return getObj("audio", audio)
+    send("audio", audio)
 }
 
 export function setAdultContent(adultContent) {
-    return getObj("adultContent", adultContent)
+    send("adultContent", adultContent)
 }
 
 export function setExcludeFromExport(exclude) {
-    return getObj("excludeFromExport", exclude)
+    send("excludeFromExport", exclude)
 }
 
 export function setHasTrailer(hasTrailer) {
-    return getObj("trailer", hasTrailer)
+    send("trailer", hasTrailer)
 }
 
 export function setAccess(access) {
-    return getObj("access", access)
+    send("access", access)
 }

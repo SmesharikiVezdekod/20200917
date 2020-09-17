@@ -8,7 +8,6 @@ import PodcastDataPage from "./PodcastDataPage";
 import AudioEditingPage from "./AudioEditingPage";
 import MusicPickingPage from "./MusicPickingPage";
 import PodcastPreviewPage from "./PodcastPreviewPage";
-import Provider from "react-redux/lib/components/Provider";
 import podcastStore from "./store/PodcastStore";
 
 class App extends React.Component {

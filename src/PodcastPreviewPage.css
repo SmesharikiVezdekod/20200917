@@ -1,0 +1,50 @@
+.image-preview {
+
+}
+
+.block-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.link {
+    margin-top: 6px;
+    color: #4986CC;
+    font-size: 12px;
+}
+
+.subtitle {
+    color: #818C99;
+    font-size: 12px;
+    margin: 6px 0;
+}
+
+.image-preview-block {
+    display: inline-block;
+}
+
+.podcast-title-text-block {
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timecode-time {
+    font-size: 17px;
+    color: #4986CC;
+}
+
+.timecode-title {
+    font-size: 17px;
+    color: black;
+}
+
+.separator {
+
+}
+
+.description-text {
+    font-size: 15px;
+    margin-top: 13px;
+    margin-bottom: 38px;
+}

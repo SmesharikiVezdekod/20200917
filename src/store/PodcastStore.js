@@ -2,15 +2,24 @@ import { createStore } from 'redux'
 
 const podcastStore = createStore(reducer, {
     panel: "first_panel",
-    title: "",
-    description: "",
+    title: "Title",
+    description: "Description",
     imagePreview: undefined,
     audio: undefined,
     adultContent: false,
     excludeFromExport: false,
     trailer: false,
     access: 0,
-    timecodes: []
+    timecodes: [
+        {
+            time: "4:43",
+            title: "zima"
+        },
+        {
+            time: "9:17",
+            title: "leto"
+        },
+    ]
 });
 
 function reducer(state, action) {

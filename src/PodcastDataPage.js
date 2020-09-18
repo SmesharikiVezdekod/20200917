@@ -130,9 +130,11 @@ export default class PodcastDataPage extends React.Component {
                     </Checkbox>
 
                     <Button size={"xl"} onClick={() => {
-                        setTitle(document.getElementById("podcast_title").value)
-                        setDescription(document.getElementById("podcast_description").value)
-                        this.props.next()
+                        const title = document.getElementById("podcast_title").value
+                        const description = document.getElementById("podcast_description").value
+                        if (title != "" && description != "" && podcastStore.getState().audio != null){
+                            this.props.next()
+                        }
                     }}>Далее</Button>
                 </div>
             </Panel>

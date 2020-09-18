@@ -2,97 +2,15 @@ import { createStore } from 'redux'
 
 const podcastStore = createStore(reducer, {
     panel: "first_panel",
-    title: "Title",
-    description: "Description",
-    imagePreview: "https://cdn.shopify.com/s/files/1/1074/8258/products/9040-99_2048x.jpg?v=1572553208",
-    audio: "https://zaycev.net/musicset/dl/5c0f3aa4eda818f24c4ec0568ad0a6fa/8773159.json?spa=false",
+    title: "",
+    description: "",
+    imagePreview: null,
+    audio: null,
     adultContent: false,
     excludeFromExport: false,
     trailer: false,
     access: 0,
-    timecodes: [
-        {
-            time: "4:43",
-            title: "zima"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "leto"
-        },
-        {
-            time: "9:17",
-            title: "oops"
-        },
-    ]
+    timecodes: []
 });
 
 function reducer(state, action) {
@@ -121,6 +39,17 @@ function reducer(state, action) {
             break;
         case "access":
             state.access = action.value
+            break;
+        case "add-timecode":
+            state.timecodes.push({time: "00:00", title: "New timecode"})
+            break;
+        case "remove-timecode":
+            state.timecodes.splice(action.value, 1)
+            break;
+        case "set-timecode":
+            const pos = action.value.pos
+            const timecode = action.value.timecode
+            state.timecodes[pos] = timecode
             break;
     }
     return state

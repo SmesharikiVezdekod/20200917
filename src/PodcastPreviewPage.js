@@ -51,12 +51,8 @@ export default class PodcastPreviewPage extends React.Component {
 
         return (
             <Panel id={"preview_panel"}>
-                <PanelHeader separator={true}>
-                    <PanelHeaderContent
-                        aside={<div>Новый подкаст</div>}
-                        before={<PanelHeaderBack onClick={() => this.props.back()}/>}
-                        status={null}/>
-
+                <PanelHeader left={<PanelHeaderBack onClick={() =>this.props.back()} />}>
+                    Редактирование
                 </PanelHeader>
 
                 <div className={"page"}>

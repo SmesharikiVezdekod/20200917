@@ -35,3 +35,15 @@ export function setHasTrailer(hasTrailer) {
 export function setAccess(access) {
     send("access", access)
 }
+
+export function removeTimecode(pos) {
+    send("remove-timecode", pos)
+}
+
+export function addTimecode() {
+    send("add-timecode")
+}
+
+export function setTimecode(pos, timecode) {
+    send("set-timecode", {pos, timecode})
+}

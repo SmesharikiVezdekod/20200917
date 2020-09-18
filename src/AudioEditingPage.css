@@ -1,0 +1,34 @@
+.timecodes-title {
+    text-transform: uppercase;
+    color: #818C99;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.timcode-row {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.timecode-title-input {
+    width: 100%;
+    margin: 0 12px;
+}
+
+.add-remove-icon {
+    height: 48px;
+    width: 24px;
+    object-fit: scale-down;
+}
+
+.add-text {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    margin-left: 12px;
+    font-weight: 400;
+    color: #3F8AE0;
+    font-size: 16px;
+}

@@ -1,5 +1,16 @@
 .image-preview {
+    height: 72px;
+    width: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
+.play-icon {
+    position: relative;
+    height: 72px;
+    width: 72px;
+    object-fit: scale-down;
+    margin-left: -72px;
 }
 
 .block-title {
@@ -19,12 +30,18 @@
     margin: 6px 0;
 }
 
+.header-block {
+    display: flex;
+    flex-direction: row;
+}
+
 .image-preview-block {
-    display: inline-block;
+
 }
 
 .podcast-title-text-block {
     padding-top: 6px;
+    padding-left: 14px;
     display: flex;
     flex-direction: column;
 }
@@ -47,4 +64,14 @@
     font-size: 15px;
     margin-top: 13px;
     margin-bottom: 38px;
+}
+
+.next-button {
+    margin-top: 12px;
+    position: sticky;
+    bottom: 12px;
+}
+
+.Separator__in {
+    margin-left: 0;
 }

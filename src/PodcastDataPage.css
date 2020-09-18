@@ -1,0 +1,174 @@
+.content {
+    padding: 12px;
+}
+
+.display-none{
+    display: none;
+}
+
+.horizontal-block {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.load-image-block {
+    display: flex;
+
+    width: 72px;
+    height: 72px;
+    left: 0px;
+    top: 1px;
+
+    background: #F2F3F5;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+.load-image-label{
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.load-image-icon-img {
+    width: 72px;
+    height: 72px;
+    object-fit: scale-down;
+}
+
+.load-image-img {
+    width: 72px;
+    height: 72px;
+    position: relative;
+    margin-left: -72px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.load-file-input {
+    display: none;
+}
+
+.input-block {
+    width: 100%;
+}
+
+.input-block-description {
+    width: 100%;
+    padding: 12px 0;
+}
+
+.input-hint-text {
+    top: 2px;
+    margin-bottom: 8px;
+
+    /* SF Subhead Regular */
+
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.154px;
+
+    /* Light Text / Subhead */
+
+    color: #6D7885;
+}
+
+
+.load-audio-block{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 20px;
+}
+
+.audio-title-text {
+    /* SF Title 2 Semibold */
+
+    /*font-family: SF Pro Display;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    letter-spacing: 0.38px;
+
+    /* Light Text / Primary */
+
+    color: #000000;
+}
+
+.audio-description-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* SF Headline Regular */
+
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.32px;
+
+    /* Light Text / Secondary */
+
+    color: #818C99;
+}
+
+.load-audio-button-block{
+    display: flex;
+    padding-top: 16px;
+}
+
+.load-audio-button-label {
+    margin: 0 auto;
+}
+
+.audio-block{
+    display: none;
+}
+
+.audio-block-edit-button{
+    display: flex;
+    margin: 0 auto;
+}
+
+.audio-text{
+    margin-bottom: 18px;
+
+    /* ↳ Label */
+    position: static;
+    height: 32px;
+    top: calc(50% - 32px/2 + 29px);
+
+    /* SF Caption 1 Regular */
+    text-align: center;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* or 123% */
+
+    letter-spacing: -0.078px;
+
+    /* Light Text / Secondary */
+
+    color: #818C99;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+}
+
